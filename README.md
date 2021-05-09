@@ -1,5 +1,5 @@
-# AutoML（sktime）
-* AutoML（sktimeを活用した時系列解析のプログラム
+# AutoML-sktime
+* AutoML-sktimeを活用した時系列解析のプログラム
 
 ## リポジトリ構成
 ```
@@ -15,12 +15,12 @@
 
 ## 環境構築
 
-* Dockderfileがあるホスト側のフォルダへ移動（例：Desktop/sktime）
+* Dockderfileがあるホスト側のフォルダへ移動（例：Desktop/AutoML-sktime）
 ```
-cd Desktop/sktime
+cd Desktop/AutoML-sktime
 ```
 
-* Dockerによる環境構築（フォルダをマウント：Desktop/sktime）
+* Dockerによる環境構築（フォルダをマウント：Desktop/AutoML-sktime）
 ```
 docker-compose up --build
 ```
@@ -29,7 +29,7 @@ docker-compose up --build
 * ローカルフォルダがマウントされている
 
 ## jupyter notebook説明
-* sktime.ipynb : 時系列解析(sktime)のnotebook
+* Time-Series-Forecasting-sktime.ipynb : 時系列解析(sktime)のnotebook
 
 ## 動作環境
 マシンスペック（Mac)
