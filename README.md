@@ -29,7 +29,7 @@ docker-compose up --build
 * ローカルフォルダがマウントされている
 
 ## jupyter notebook説明
-* sktime.ipynb : 時系列解析(Darts)のnotebook
+* sktime.ipynb : 時系列解析(sktime)のnotebook
 
 ## 動作環境
 マシンスペック（Mac)
