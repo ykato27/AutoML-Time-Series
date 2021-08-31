@@ -14,7 +14,6 @@ flake8-docstrings==1.5.0
 pre-commit==2.11.1
 matplotlib==3.4.3
 seaborn==0.11.1
-sktime==0.7.0
-pmdarima==1.8.1
-tbats==1.1.0
+ipython
+ipywidgets
 nb_black
