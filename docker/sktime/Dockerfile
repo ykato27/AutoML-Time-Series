@@ -41,7 +41,7 @@ RUN rm -rf $PYENV_ROOT
 
 RUN pip install --upgrade pip
 
-COPY requirements.txt ./
+COPY ./sktime/requirements.txt ./
 RUN pip install -r requirements.txt
 
 WORKDIR home/work

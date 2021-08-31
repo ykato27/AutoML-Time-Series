@@ -14,6 +14,7 @@ flake8-docstrings==1.5.0
 pre-commit==2.11.1
 matplotlib==3.3.4
 seaborn==0.11.1
-sktime
-pmdarima
-tbats
+sktime==0.7.0
+pmdarima==1.8.1
+tbats==1.1.0
+nb_black
