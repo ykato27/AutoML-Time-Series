@@ -1,5 +1,6 @@
-# AutoML-sktime
-* AutoML-sktimeを活用した時系列解析のプログラム
+# AutoML-Time-Series
+
+- AutoML-Time-Series を活用した時系列解析のプログラム
 
 ## リポジトリ構成
 ```
