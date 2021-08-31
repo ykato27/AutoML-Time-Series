@@ -5,32 +5,62 @@
 ## リポジトリ構成
 ```
 .
-├── README.md                 READMEファイル
-├── .dockerignore        
-├── Dockerfile                Dockerファイル
-├── docker-compose.yml
-├── notebook                  jupyter notebook
-├── requirements.txt          requirementsファイル
-└── data                      dataファイル
+├── README.md
+├── data
+│   └── AirPassengers.csv
+├── docker
+│   ├── darts
+│   │   ├── Dockerfile
+│   │   └── requirements.txt
+│   └── sktime
+│       ├── Dockerfile
+│       └── requirements.txt
+├── docker-compose-darts.yml
+├── docker-compose-sktime.yml
+├── docs
+├── models
+├── notebooks
+│   ├── darts
+│   │   ├── 01-darts-intro.ipynb
+│   │   ├── 02-multi-time-series-and-covariates.ipynb
+│   │   ├── 03-data-processing.ipynb
+│   │   ├── 04-FFT-examples.ipynb
+│   │   ├── 05-RNN-examples.ipynb
+│   │   ├── 06-TCN-examples.ipynb
+│   │   ├── 07-Transformer-examples.ipynb
+│   │   ├── 08-NBEATS-examples.ipynb
+│   │   ├── 09-DeepAR-examples.ipynb
+│   │   ├── 10-DeepTCN-examples.ipynb
+│   │   ├── 11-Kalman-filter-examples.ipynb
+│   │   ├── 12-GP-filter-examples.ipynb
+│   │   ├── 13-Dynamic-Time-Warping-example.ipynb
+│   │   ├── FFT.ipynb
+│   │   ├── Multi-Time-Series-Forecasting-Darts.ipynb
+│   │   ├── Time-Series-Forecasting-Darts.ipynb
+│   │   └── future-covariates-example.ipynb
+│   └── sktime
+│       └── Time-Series-Forecasting-sktime.ipynb
+├── src
+│   └── __init__.py
+├── tests
+│   └── __init__.py
+└── work
 ```
 
 ## 環境構築
 
-* Dockderfileがあるホスト側のフォルダへ移動（例：Desktop/AutoML-sktime）
+* Dockderfileがあるホスト側のフォルダへ移動（例：Desktop/AutoML-Time-Series）
 ```
-cd Desktop/AutoML-sktime
+cd Desktop/AutoML-Time-Series
 ```
 
-* Dockerによる環境構築（フォルダをマウント：Desktop/AutoML-sktime）
+* Dockerによる環境構築（フォルダをマウント：Desktop/AutoML-Time-Series）
 ```
-docker-compose up --build
+docker-compose -f docker-compose-{*構築対象}.yml up --build
 ```
 
 * ブラウザーを立ち上げてlocalhost:8888へアクセス
 * ローカルフォルダがマウントされている
-
-## jupyter notebook説明
-* Time-Series-Forecasting-sktime.ipynb : 時系列解析(sktime)のnotebook
 
 ## 動作環境
 マシンスペック（Mac)
