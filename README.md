@@ -49,18 +49,24 @@
 
 ## 環境構築
 
-* Dockderfileがあるホスト側のフォルダへ移動（例：Desktop/AutoML-Time-Series）
+- Dockderfileがあるホスト側のフォルダへ移動（例：Desktop/AutoML-Time-Series）
+
 ```
 cd Desktop/AutoML-Time-Series
 ```
 
-* Dockerによる環境構築（フォルダをマウント：Desktop/AutoML-Time-Series）
+- Dockerによる環境構築（フォルダをマウント：Desktop/AutoML-Time-Series）
+
 ```
 docker-compose -f docker-compose-{*構築対象}.yml up --build
 ```
 
-* ブラウザーを立ち上げてlocalhost:8888へアクセス
-* ローカルフォルダがマウントされている
+- ブラウザーを立ち上げてlocalhost:8888へアクセス
+- ローカルフォルダがマウントされている
+
+## Display notebooks
+
+- [View Jupyter notebooks in nbviewer](https://nbviewer.jupyter.org/github/ykato27/AutoML-Time-Series/tree/main/notebooks/)
 
 ## 動作環境
 マシンスペック（Mac)
