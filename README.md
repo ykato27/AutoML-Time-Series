@@ -20,6 +20,7 @@
 ├── docs
 ├── models
 ├── notebooks
+│   ├── Auto_TS_example.ipynb
 │   ├── darts
 │   │   ├── 01-darts-intro.ipynb
 │   │   ├── 02-multi-time-series-and-covariates.ipynb
